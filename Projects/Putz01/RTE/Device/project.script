@@ -1,0 +1,4 @@
+load STM32F429ZITx 
+project name STCubeGenerated 
+project toolchain MDK-ARM 473 
+project path D:\Dev\HsDesign\StretchTech\Projects\Putz01\RTE\Device\STM32F429ZITx\ 

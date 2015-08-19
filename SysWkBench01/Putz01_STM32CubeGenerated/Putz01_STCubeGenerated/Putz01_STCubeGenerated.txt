@@ -1,0 +1,88 @@
+Configuration	Putz01_STCubeGenerated
+STM32CubeMX 	4.8.0
+Date	08/03/2015
+MCU	STM32F429ZITx
+
+
+
+PERIPHERALS	MODES	FUNCTIONS	PINS
+I2C1	I2C	I2C1_SCL	PB6
+I2C1	I2C	I2C1_SDA	PB7
+I2C2	I2C	I2C2_SCL	PF1
+I2C2	I2C	I2C2_SDA	PF0
+I2S2	Half-Duplex Slave	I2S2_CK	PB10
+I2S2	Half-Duplex Slave	I2S2_SD	PC3
+I2S2	Half-Duplex Slave	I2S2_WS	PB12
+I2S3	Half-Duplex Slave	I2S3_CK	PC10
+I2S3	Half-Duplex Slave	I2S3_SD	PC12
+I2S3	Half-Duplex Slave	I2S3_WS	PA4
+SAI1	Asynchronous Slave	SAI1_SD_A	PE6
+SAI1	Asynchronous Slave	SAI1_SCK_A	PE5
+SAI1	Asynchronous Slave	SAI1_FS_A	PE4
+SAI1	Synchronous Slave	SAI1_SD_B	PE3
+SYS	Serial Wire Debug (SWD)	SYS_JTCK-SWCLK	PA14
+SYS	Serial Wire Debug (SWD)	SYS_JTMS-SWDIO	PA13
+USART2	Asynchronous	USART2_RX	PA3
+USART2	Asynchronous	USART2_TX	PA2
+USART2	CTS/RTS	USART2_CTS	PA0/WKUP
+USART2	CTS/RTS	USART2_RTS	PA1
+USART3	Asynchronous	USART3_RX	PB11
+USART3	Asynchronous	USART3_TX	PD8
+USART3	CTS/RTS	USART3_CTS	PB13
+USART3	CTS/RTS	USART3_RTS	PB14
+
+
+
+Pin Nb	PINs	FUNCTIONs	LABELs
+2	PE3	SAI1_SD_B	
+3	PE4	SAI1_FS_A	
+4	PE5	SAI1_SCK_A	
+5	PE6	SAI1_SD_A	
+10	PF0	I2C2_SDA	
+11	PF1	I2C2_SCL	
+29	PC3	I2S2_SD	
+34	PA0/WKUP	USART2_CTS	
+35	PA1	USART2_RTS	
+36	PA2	USART2_TX	
+37	PA3	USART2_RX	
+40	PA4	I2S3_WS	
+69	PB10	I2S2_CK	
+70	PB11	USART3_RX	
+73	PB12	I2S2_WS	
+74	PB13	USART3_CTS	
+75	PB14	USART3_RTS	
+77	PD8	USART3_TX	
+105	PA13	SYS_JTMS-SWDIO	
+109	PA14	SYS_JTCK-SWCLK	
+111	PC10	I2S3_CK	
+113	PC12	I2S3_SD	
+136	PB6	I2C1_SCL	
+137	PB7	I2C1_SDA	
+
+
+
+SOFTWARE PROJECT
+
+Project Settings : 
+Project Name : Putz01_STCubeGenerated
+Project Folder : D:\Dev\HsDesign\StretchTech\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated
+Toolchain / IDE : SW4STM32
+Firmware Package Name and Version : STM32Cube FW_F4 V1.6.0
+
+
+Code Generation Settings : 
+STM32Cube Firmware Library Package : Copy all used libraries into the project folder
+Generate peripheral initialization as a pair of '.c/.h' files per IP : No
+Backup previously generated files when re-generating : Yes
+Delete previously generated files when not re-generated : Yes
+Set all free pins as analog (to optimize the power consumption) : No
+
+
+Toolchains Settings : 
+Compiler Optimizations : Balanced Size/Speed
+
+
+
+
+
+
