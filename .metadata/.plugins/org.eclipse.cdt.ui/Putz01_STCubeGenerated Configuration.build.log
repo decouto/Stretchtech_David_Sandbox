@@ -1,0 +1,20 @@
+09:25:11 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+
+09:25:14 Build Finished (took 2s.821ms)
+

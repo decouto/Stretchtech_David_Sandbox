@@ -142,5 +142,13 @@
 			<name>Application/User/LED_F429Discovery.c</name>
 			<type>1</type>
 			<location>PARENT-2-PROJECT_LOC/Src/LED_F429Discovery.c</location>
+		</link><link>
+			<name>Application/User/i2c_setup.c</name>
+			<type>1</type>
+			<location>PARENT-2-PROJECT_LOC/Src/i2c_setup.c</location>
+		</link><link>
+			<name>Application/User/signals.c</name>
+			<type>1</type>
+			<location>PARENT-2-PROJECT_LOC/Src/signals.c</location>
 		</link></linkedResources>
 </projectDescription>

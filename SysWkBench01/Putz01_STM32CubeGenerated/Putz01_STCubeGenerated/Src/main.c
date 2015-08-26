@@ -34,7 +34,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_hal.h"
 #include "putz01.h"
-//#include "i2c_setup.h"
+#include "i2c_setup.h"
 
 /* USER CODE BEGIN Includes */
 

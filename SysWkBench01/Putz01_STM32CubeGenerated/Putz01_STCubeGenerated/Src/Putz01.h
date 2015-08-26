@@ -22,12 +22,13 @@
 
 #define PUTZ_ASSERT(x)	if(!(x))Putz01Assert((uint8_t *)__FILE__, __LINE__)
 #define PUTZ_DEBUG_WAIT() { BOOL b = 1; puts ("DEBUG_WAIT!\r"); while (b); }
+#define FLOAT32_VAR_WRAPPED_AS_UINT32(x) *(uint32_t*)&(x)
 
-#define USING_I2S	1
+#define USING_I2S	0
 
 #define I2S2BUFSZ	4096
 #define I2S3BUFSZ	4096
-#define SAIABUFSZ	4096
+#define SAIABUFSZ	6144//3072
 #define SAIBBUFSZ	4096
 
 #define PORTA_IDR	((uint32_t*)0x40020010)
