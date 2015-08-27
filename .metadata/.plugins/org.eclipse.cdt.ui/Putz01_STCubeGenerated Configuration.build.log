@@ -1,4 +1,4 @@
-09:25:11 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+09:40:39 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 'Invoking: MCU GCC Compiler'
@@ -16,5 +16,5 @@ make --no-print-directory post-build
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
 
-09:25:14 Build Finished (took 2s.821ms)
+09:40:42 Build Finished (took 2s.633ms)
 

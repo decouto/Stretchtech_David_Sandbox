@@ -465,13 +465,14 @@ BOOL Putz01SaiAProc (void) {
 		{
 			if (i%2 == 0)
 			{
-				leftBuf[i+512] = (q31_t) (((SaiABuf[i]<<1)>>8) & 0x00FFFFFF);
+
+				leftBuf[i+512] = (q31_t) ((SaiABuf[i])>>8);
 				leftBuf[i+513] = 0.0;
-			//	printf("%d: %d",i+512, leftBuf[i+512]);
-			//	printf("SAI: %d", (((SaiABuf[i]<<1)>>8) & 0x00FFFFFF));
+				//printf("%d: %d",i+512, leftBuf[i+512]);
+				//printf("SAI: %d", (((SaiABuf[i])>>8)));
 			} else
 			{
-				rightBuf[i+511] = (q31_t) ((SaiABuf[i]<<1)>>8) & 0x00FFFFFF;
+				rightBuf[i+511] = (q31_t) ((SaiABuf[i])>>8);
 				rightBuf[i+512] = 0.0;
 			}
 		}
@@ -481,12 +482,16 @@ BOOL Putz01SaiAProc (void) {
 		{
 			/*i=0;
 			while ( i < 2048) {
-				printf("\r\n%d Left: %X\r\n",i,leftBuf[i]);
-				printf("\r\n%d Right: %X\r\n",i,rightBuf[i]);
+				printf("%d Left: %d",i,leftBuf[i]);
+				i++;
+			}
+			i=0;
+			while ( i < 2048) {
+				printf("%d Right: %d",i,rightBuf[i]);
 				i++;
 			}*/
 			//printf("Enter Single Trigger Test\r\n");
-			testFFT((q31_t *)&leftBuf,(q31_t *)&rightBuf, 2048);
+			testFFT(leftBuf,rightBuf, 2048);
 			//printf("End Single Trigger Test\r\n");
 			//sum = complex_running_avg((uint32_t *)&leftBuf[0], 2048, 0);
 			//printf("Average: $%X", sum);

@@ -1,8 +1,8 @@
-08:42:03 **** Clean-only build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+08:28:26 **** Clean-only build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make clean 
 rm -rf *
 ' '
-08:42:05 **** Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+08:28:29 **** Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c'
 'Invoking: MCU GCC Compiler'
@@ -1862,10 +1862,6 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DU
 'Invoking: MCU GCC Compiler'
 D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c"
-D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c: In function 'main':
-D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c:114:3: warning: implicit declaration of function 'I2C2_WriteBuffer' [-Wimplicit-function-declaration]
-   I2C2_WriteBuffer((uint8_t) 4, (uint8_t *)testSend, (uint8_t) 5, hi2c2);
-   ^
 'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c'
 ' '
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
@@ -1901,75 +1897,7 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-08:43:59 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
-make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c'
-' '
-'Building target: Putz01_STCubeGenerated Configuration.elf'
-'Invoking: MCU GCC Linker'
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
-'Finished building target: Putz01_STCubeGenerated Configuration.elf'
-' '
-make --no-print-directory post-build
-'Generate binary'
-arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
-' '
-08:45:39 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
-make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-' '
-'Building target: Putz01_STCubeGenerated Configuration.elf'
-'Invoking: MCU GCC Linker'
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
-'Finished building target: Putz01_STCubeGenerated Configuration.elf'
-' '
-make --no-print-directory post-build
-'Generate binary'
-arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
-' '
-08:46:30 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
-make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-' '
-'Building target: Putz01_STCubeGenerated Configuration.elf'
-'Invoking: MCU GCC Linker'
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
-'Finished building target: Putz01_STCubeGenerated Configuration.elf'
-' '
-make --no-print-directory post-build
-'Generate binary'
-arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
-' '
-08:47:55 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
-make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-' '
-'Building target: Putz01_STCubeGenerated Configuration.elf'
-'Invoking: MCU GCC Linker'
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
-'Finished building target: Putz01_STCubeGenerated Configuration.elf'
-' '
-make --no-print-directory post-build
-'Generate binary'
-arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
-' '
-08:50:03 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+08:32:01 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 'Invoking: MCU GCC Compiler'
@@ -1986,65 +1914,7 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-08:55:56 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
-make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/ApControl.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/ApControl.d" -MT"Application/User/ApControl.o" -o "Application/User/ApControl.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/ApControl.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/ApControl.c'
-' '
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-' '
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/main.d" -MT"Application/User/main.o" -o "Application/User/main.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/main.c'
-' '
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
-' '
-'Building target: Putz01_STCubeGenerated Configuration.elf'
-'Invoking: MCU GCC Linker'
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
-'Finished building target: Putz01_STCubeGenerated Configuration.elf'
-' '
-make --no-print-directory post-build
-'Generate binary'
-arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
-' '
-09:08:52 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
-make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-' '
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
-' '
-'Building target: Putz01_STCubeGenerated Configuration.elf'
-'Invoking: MCU GCC Linker'
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
-'Finished building target: Putz01_STCubeGenerated Configuration.elf'
-' '
-make --no-print-directory post-build
-'Generate binary'
-arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
-' '
-09:10:51 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+08:33:18 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 'Invoking: MCU GCC Compiler'
@@ -2061,7 +1931,24 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-09:11:55 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+08:35:27 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+08:36:52 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
 'Invoking: MCU GCC Compiler'
@@ -2078,16 +1965,96 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-09:15:30 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+08:37:44 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+08:38:25 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+08:39:38 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+08:48:30 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 'Invoking: MCU GCC Compiler'
 D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
 D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c: In function 'testFFT':
-D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:30:11: warning: unused variable 'i' [-Wunused-variable]
-  uint16_t i;
-           ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:37:41: warning: passing argument 2 of 'arm_cfft_q31' from incompatible pointer type
+  arm_cfft_q31(&arm_cfft_sR_q31_len1024, &input1, ifftFlag, doBitReverse);
+                                         ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:2249:6: note: expected 'q31_t *' but argument is of type 'q31_t **'
+ void arm_cfft_q31( 
+      ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:43:41: warning: passing argument 2 of 'arm_cfft_q31' from incompatible pointer type
+  arm_cfft_q31(&arm_cfft_sR_q31_len1024, &input2, ifftFlag, doBitReverse);
+                                         ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:2249:6: note: expected 'q31_t *' but argument is of type 'q31_t **'
+ void arm_cfft_q31( 
+      ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:58:20: warning: passing argument 1 of 'arm_cmplx_mag_q31' from incompatible pointer type
+  arm_cmplx_mag_q31(&input2, &testOutput2, fftSize);
+                    ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t **'
+   void arm_cmplx_mag_q31(
+        ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:58:29: warning: passing argument 2 of 'arm_cmplx_mag_q31' from incompatible pointer type
+  arm_cmplx_mag_q31(&input2, &testOutput2, fftSize);
+                             ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t (*)[1024]'
+   void arm_cmplx_mag_q31(
+        ^
 'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 ' '
 'Building target: Putz01_STCubeGenerated Configuration.elf'
@@ -2099,7 +2066,112 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-09:20:10 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+08:51:09 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+08:53:37 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:04:06 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:07:49 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:10:47 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:10:55 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+make: Nothing to be done for `all'.
+09:16:01 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:18:06 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
 'Invoking: MCU GCC Compiler'
@@ -2111,10 +2183,6 @@ arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DU
 'Invoking: MCU GCC Compiler'
 D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
 arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
-D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c: In function 'testFFT':
-D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:30:11: warning: unused variable 'i' [-Wunused-variable]
-  uint16_t i;
-           ^
 'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 ' '
 'Building target: Putz01_STCubeGenerated Configuration.elf'
@@ -2126,7 +2194,286 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-09:22:19 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+09:19:24 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:20:41 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:22:24 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c: In function 'testFFT':
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:37:40: warning: passing argument 2 of 'arm_cfft_q31' makes pointer from integer without a cast
+  arm_cfft_q31(&arm_cfft_sR_q31_len1024,input1[0], ifftFlag, doBitReverse);
+                                        ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:2249:6: note: expected 'q31_t *' but argument is of type 'q31_t'
+ void arm_cfft_q31( 
+      ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:43:40: warning: passing argument 2 of 'arm_cfft_q31' makes pointer from integer without a cast
+  arm_cfft_q31(&arm_cfft_sR_q31_len1024,input2[0], ifftFlag, doBitReverse);
+                                        ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:2249:6: note: expected 'q31_t *' but argument is of type 'q31_t'
+ void arm_cfft_q31( 
+      ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:52:20: warning: passing argument 1 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input1[0],testOutput1[0], fftSize);
+                    ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:52:30: warning: passing argument 2 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input1[0],testOutput1[0], fftSize);
+                              ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:58:20: warning: passing argument 1 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input2[0],testOutput2[0], fftSize);
+                    ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:58:30: warning: passing argument 2 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input2[0],testOutput2[0], fftSize);
+                              ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:22:59 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c: In function 'testFFT':
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:43:40: warning: passing argument 2 of 'arm_cfft_q31' makes pointer from integer without a cast
+  arm_cfft_q31(&arm_cfft_sR_q31_len1024,input2[0], ifftFlag, doBitReverse);
+                                        ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:2249:6: note: expected 'q31_t *' but argument is of type 'q31_t'
+ void arm_cfft_q31( 
+      ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:52:20: warning: passing argument 1 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input1[0],testOutput1[0], fftSize);
+                    ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:52:30: warning: passing argument 2 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input1[0],testOutput1[0], fftSize);
+                              ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:58:20: warning: passing argument 1 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input2[0],testOutput2[0], fftSize);
+                    ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:58:30: warning: passing argument 2 of 'arm_cmplx_mag_q31' makes pointer from integer without a cast
+  arm_cmplx_mag_q31(input2[0],testOutput2[0], fftSize);
+                              ^
+In file included from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.h:1:0,
+                 from D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:1:
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include/arm_math.h:6702:8: note: expected 'q31_t *' but argument is of type 'q31_t'
+   void arm_cmplx_mag_q31(
+        ^
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:23:35 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:24:32 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:27:34 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:5:26: error: 'length' undeclared here (not in a function)
+ static q31_t testOutput1[length/2];
+                          ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:5:14: warning: 'testOutput1' defined but not used [-Wunused-variable]
+ static q31_t testOutput1[length/2];
+              ^
+D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c:6:14: warning: 'testOutput2' defined but not used [-Wunused-variable]
+ static q31_t testOutput2[length/2];
+              ^
+make: *** [Application/User/signals.o] Error 1
+09:27:47 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:28:04 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:28:10 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+make: Nothing to be done for `all'.
+09:33:42 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:36:48 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+make all 
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+'Invoking: MCU GCC Compiler'
+D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
+' '
+'Building target: Putz01_STCubeGenerated Configuration.elf'
+'Invoking: MCU GCC Linker'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
+'Finished building target: Putz01_STCubeGenerated Configuration.elf'
+' '
+make --no-print-directory post-build
+'Generate binary'
+arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
+' '
+09:37:56 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
 'Invoking: MCU GCC Compiler'
@@ -2143,13 +2490,13 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-09:23:08 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+09:39:36 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 'Invoking: MCU GCC Compiler'
 D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/signals.d" -MT"Application/User/signals.o" -o "Application/User/signals.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c"
+'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 ' '
 'Building target: Putz01_STCubeGenerated Configuration.elf'
 'Invoking: MCU GCC Linker'
@@ -2160,24 +2507,7 @@ make --no-print-directory post-build
 'Generate binary'
 arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
 ' '
-09:23:38 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
-make all 
-'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-'Invoking: MCU GCC Compiler'
-D:\HSDesign\StretchTech\test\SysWkBench01\Putz01_STM32CubeGenerated\Putz01_STCubeGenerated\SW4STM32\Putz01_STCubeGenerated Configuration\Debug
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DUSE_HAL_DRIVER -DSTM32F429xx -I../../../Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc -I../../../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../../../Drivers/CMSIS/Include -I../../../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Device/ST/STM32F4xx/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/CMSIS/Include" -I"D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/SW4STM32/Putz01_STCubeGenerated Configuration/Drivers/STM32F4xx_HAL_Driver/Inc" -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"Application/User/Putz01.d" -MT"Application/User/Putz01.o" -o "Application/User/Putz01.o" "D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c"
-'Finished building: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/Putz01.c'
-' '
-'Building target: Putz01_STCubeGenerated Configuration.elf'
-'Invoking: MCU GCC Linker'
-arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -specs=nosys.specs -specs=nano.specs -T"..\STM32F429ZITx_FLASH.ld" -Wl,-Map=output.map -Wl,--gc-sections -lm -o "Putz01_STCubeGenerated Configuration.elf" @"objects.list"  -lc -lm
-'Finished building target: Putz01_STCubeGenerated Configuration.elf'
-' '
-make --no-print-directory post-build
-'Generate binary'
-arm-none-eabi-objcopy -O binary "Putz01_STCubeGenerated Configuration.elf" "Putz01_STCubeGenerated Configuration.bin"
-' '
-09:25:11 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
+09:40:39 **** Incremental Build of configuration Debug for project Putz01_STCubeGenerated Configuration ****
 make all 
 'Building file: D:/HSDesign/StretchTech/test/SysWkBench01/Putz01_STM32CubeGenerated/Putz01_STCubeGenerated/Src/signals.c'
 'Invoking: MCU GCC Compiler'
