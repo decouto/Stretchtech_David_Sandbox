@@ -222,8 +222,8 @@ void DumpApRegs (void) {
 }
 #endif
 
-q31_t leftBuf[2048];
-q31_t rightBuf[2048];
+float32_t leftBuf[2048];
+float32_t rightBuf[2048];
 
 BOOL Putz01Run(void) {
 	puts ("Putz01Run() Enter\r");
@@ -459,20 +459,20 @@ BOOL Putz01SaiAProc (void) {
 				SaiABufCtl.nErrorProc++;
 		}
 		uint16_t i = 0;
-		memmove((q31_t *)&leftBuf[0],(q31_t *)&leftBuf[1536],512*4);
-		memmove((q31_t *)&rightBuf[0],(q31_t *)&rightBuf[1536],512*4);
+		memmove((float32_t *)&leftBuf[0],(float32_t *)&leftBuf[1536],512*4);
+		memmove((float32_t *)&rightBuf[0],(float32_t *)&rightBuf[1536],512*4);
 		for (i=0;i<1536;i++)
 		{
 			if (i%2 == 0)
 			{
 
-				leftBuf[i+512] = (q31_t) ((SaiABuf[i])>>8);
+				leftBuf[i+512] = (float32_t) ((SaiABuf[i])>>8);
 				leftBuf[i+513] = 0.0;
-				//printf("%d: %d",i+512, leftBuf[i+512]);
-				//printf("SAI: %d", (((SaiABuf[i])>>8)));
+				printf("%d: %d",i+512, leftBuf[i+512]);
+				printf("SAI: %d", (((SaiABuf[i])>>8)));
 			} else
 			{
-				rightBuf[i+511] = (q31_t) ((SaiABuf[i])>>8);
+				rightBuf[i+511] = (float32_t) ((SaiABuf[i])>>8);
 				rightBuf[i+512] = 0.0;
 			}
 		}

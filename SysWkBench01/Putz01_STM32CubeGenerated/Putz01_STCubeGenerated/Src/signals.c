@@ -2,8 +2,6 @@
 #include "Putz01.h"
 
 
-//float32_t maxValue;
-
 /* ------------------------------------------------------------------
 * Global variables for FFT Bin Example
 * ------------------------------------------------------------------- */
@@ -16,29 +14,25 @@ uint8_t doBitReverse = 1;
 /* Reference index at which max energy of bin occurs */
 uint32_t refIndex = 213, testIndex = 0;
 
-q31_t maxValue;
+float32_t maxValue;
 
-void testFFT(q31_t *input1, q31_t *input2, uint16_t length)
+float32_t testOutput1[TEST_LENGTH_SAMPLES/2];
+float32_t testOutput2[TEST_LENGTH_SAMPLES/2];
+
+void testFFT(float32_t *input1, float32_t *input2, uint16_t length)
 {
 
-	/* Process the data through the CFFT/CIFFT module */
-	//printf("Input zero: %X",input[0]);
-	uint16_t i;
-	/*for (i=0;i<1024;i++) {
-	  printf("%d:%d",i,input[i]);
-	}*/
-
-	q31_t testOutput1[length/2];
-	q31_t testOutput2[length/2];
-	q31_t output[length];
+	uint16_t i = 0;
+	uint32_t counter = 0;
+	float32_t output[length];
 	printf("testFFT\r\n");
-	arm_cfft_q31(&arm_cfft_sR_q31_len1024,input1, ifftFlag, doBitReverse);
+	arm_cfft_f32(&arm_cfft_sR_f32_len1024,input1, ifftFlag, doBitReverse);
 
 	/*for (i=0;i<2048;i++) {
 	  printf("%d FFT1:%d",i,input1[i]);
 	}*/
 
-	arm_cfft_q31(&arm_cfft_sR_q31_len1024,input2, ifftFlag, doBitReverse);
+	arm_cfft_f32(&arm_cfft_sR_f32_len1024,input2, ifftFlag, doBitReverse);
 
 	/*for (i=0;i<2048;i++) {
 	  printf("%d FFT2:%d",i,input2[i]);
@@ -47,32 +41,51 @@ void testFFT(q31_t *input1, q31_t *input2, uint16_t length)
 	//printf("testFFT 1\r\n");
 	/* Process the data through the Complex Magnitude Module for
 	calculating the magnitude at each bin */
-	arm_cmplx_mag_q31(input1,testOutput1, length/2);
 
-	for (i=0;i<1024;i++) {
+	while(i<length)
+	{
+		arm_sqrt_f32(input1[i]*input1[i]+input1[i+1]*input1[i+1],&testOutput1[counter]);
+		//printf("testOutput1: %d",testOutput1[counter]);
+		i+=2;
+		counter++;
+	}
+
+	//arm_cmplx_mag_float32(input1,testOutput1, length/2);
+
+	/*for (i=0;i<1024;i++) {
 	  printf("%d Mag1:%d",i,testOutput1[i]);
+	}*/
+
+	counter = 0;
+	i = 0;
+	while(i<length)
+	{
+		arm_sqrt_f32(input2[i]*input2[i]+input2[i+1]*input2[i+1],&testOutput2[counter]);
+		//printf("testOutput1: %d",testOutput1[counter]);
+		i+=2;
+		counter++;
 	}
 
-	arm_cmplx_mag_q31(input2,testOutput2, length/2);
+	//arm_cmplx_mag_float32(input2,testOutput2, length/2);
 
-	for (i=0;i<1024;i++) {
+	/*for (i=0;i<1024;i++) {
 	  printf("%d Mag2:%d",i,testOutput2[i]);
-	}
+	}*/
 
 	//printf("testFFT 2\r\n");
 
-	genCrossCorr_q31((q31_t *)&input1, (q31_t *)&input2, (q31_t *)&testOutput1,(q31_t *)&testOutput2, (q31_t *)&output, length);
+	genCrossCorr_f32((float32_t *)&input1, (float32_t *)&input2, (float32_t *)&testOutput1,(float32_t *)&testOutput2, (float32_t *)&output, length);
 
 	//printf("testFFT 3\r\n");
 
 	//printf("Size of Output: %d",sizeof(output));
 
-	for (i=0;i<2048;i++) {
+	/*for (i=0;i<2048;i++) {
 	  printf("%d GCC:%d",i,output[i]);
-	}
+	}*/
 
 	/* Calculates maxValue and returns corresponding BIN value */
-	arm_max_q31((q31_t *)output, fftSize, &maxValue, &testIndex);
+	arm_max_f32((float32_t *)output, fftSize, &maxValue, &testIndex);
 	printf("GCC Index: %d\r\n", maxValue);
 	//printf("Test index: %d", testIndex);
 	//printf("Ref index: %d", refIndex);
@@ -157,49 +170,60 @@ float32_t complex_variance(uint32_t *input, uint16_t length, float32_t average)
 }
 
 //WARNING: shifts original mag array
-void genCrossCorr_q31(q31_t *inputFreqData1, q31_t *inputFreqData2, q31_t *inputFreqMag1,q31_t *inputFreqMag2, q31_t *output, uint16_t lengthInput)
+void genCrossCorr_f32(float32_t *inputFreqData1, float32_t *inputFreqData2, float32_t *inputFreqMag1,float32_t *inputFreqMag2, float32_t *output, uint16_t lengthInput)
 {
 	uint16_t i=0;
 	uint16_t counter=0;
-	q31_t numerator[lengthInput];
-	q31_t denominator[lengthInput];
-	q31_t conj2[lengthInput];
+	float32_t numerator[lengthInput];
+	float32_t denominator[lengthInput];
+	float32_t conj2[lengthInput];
+	float32_t temp[lengthInput];
 
 	//printf("gcc 1\r\n");
 
-	fftShift_q31((q31_t *)&inputFreqMag1, lengthInput);
+	//printf("Size: %d", sizeof(float32_t)*lengthInput);
 
-	for (i=0;i<2048;i++) {
-	  printf("ShiftMag1:%d",i,inputFreqMag1[i]);
-	}
+	/*for (i=0;i<1024;i++) {
+	  printf("%d Before Shift:%d",i,inputFreqMag1[i]);
+	}*/
 
-	fftShift_q31((q31_t *)&inputFreqMag2, lengthInput);
+	memcpy((float32_t *)&temp[0],(float32_t *)&inputFreqMag1[0],512*4);
+	memmove((float32_t *)&inputFreqMag1[0],(float32_t *)&inputFreqMag1[lengthInput/2],512*4);
+	memcpy((float32_t *)&inputFreqMag1[lengthInput/2],(float32_t *)&temp[0],512*4);
 
-	for (i=0;i<2048;i++) {
-	  printf("ShiftMag2:%d",i,inputFreqMag2[i]);
-	}
+	/*for (i=0;i<1024;i++) {
+	  printf("%d After Shift:%d",i,inputFreqMag1[i]);
+	}*/
+
+	//fftShift_float32((float32_t *)&inputFreqMag1, lengthInput/2);
+
+	//fftShift_float32((float32_t *)&inputFreqMag2, lengthInput/2);
+
+	/*for (i=0;i<1024;i++) {
+	  printf("%d ShiftMag2:%d",i,inputFreqMag2[i]);
+	}*/
 
 	//printf("gcc 2\r\n");
 
-	arm_cmplx_conj_q31((q31_t *)&inputFreqData2,(q31_t *)&conj2,(uint32_t)lengthInput/2);
+	arm_cmplx_conj_f32((float32_t *)&inputFreqData2,(float32_t *)&conj2,(uint32_t)lengthInput/2);
 
-	for (i=0;i<2048;i++) {
-	  printf("ConjFreq2:%d",i,conj2[i]);
-	}
+	/*for (i=0;i<2048;i++) {
+	  printf("%d ConjFreq2:%d",i,conj2[i]);
+	}*/
 
 	//printf("gcc 3\r\n");
 
-	arm_mult_q31((q31_t *)&inputFreqData1,(q31_t *)&conj2,(q31_t *)&numerator, (uint32_t) lengthInput);
+	arm_mult_f32((float32_t *)&inputFreqData1,(float32_t *)&conj2,(float32_t *)&numerator, (uint32_t) lengthInput);
 
-	for (i=0;i<2048;i++) {
-	  printf("MultFreq1Conj2:%d",i,numerator[i]);
-	}
+	/*for (i=0;i<2048;i++) {
+	  printf("%d MultFreq1Conj2:%d",i,numerator[i]);
+	}*/
 
-	arm_mult_q31((q31_t *)&inputFreqMag1,(q31_t *)&inputFreqMag2,(q31_t *)&denominator, (uint32_t) lengthInput/2);
+	arm_mult_f32((float32_t *)&inputFreqMag1,(float32_t *)&inputFreqMag2,(float32_t *)&denominator, (uint32_t) lengthInput/2);
 
-	for (i=0;i<2048;i++) {
-	  printf("MultMag1Mag2:%d",i,denominator[i]);
-	}
+	/*for (i=0;i<2048;i++) {
+	  printf("%d MultMag1Mag2:%d",i,denominator[i]);
+	}*/
 
 	//printf("gcc 5\r\n");
 
@@ -213,27 +237,27 @@ void genCrossCorr_q31(q31_t *inputFreqData1, q31_t *inputFreqData2, q31_t *input
 		counter++;
 	}
 
-	for (i=0;i<2048;i++) {
-	  printf("NumDivDen:%d",i,output[i]);
-	}
+	/*for (i=0;i<2048;i++) {
+	  printf("%d NumDivDen:%d",i,output[i]);
+	}*/
 
 	//printf("gcc 6\r\n");
 
-	arm_cfft_q31(&arm_cfft_sR_q31_len1024, (q31_t *)output, 1, doBitReverse);
+	arm_cfft_f32(&arm_cfft_sR_f32_len1024, (float32_t *)output, 1, doBitReverse);
 
-	for (i=0;i<2048;i++) {
-	  printf("IFFT:%d",i,output[i]);
-	}
+	/*for (i=0;i<2048;i++) {
+	  printf("%d IFFT:%d",i,output[i]);
+	}*/
 
 	//printf("gcc return\r\n");
 
 }
 
-void spectCentroid_q31(q31_t *inputFreqMag, q31_t *inputFreq, q31_t *outputCentroid, uint16_t lengthInput)
+void spectCentroid_f32(float32_t *inputFreqMag, float32_t *inputFreq, float32_t *outputCentroid, uint16_t lengthInput)
 {
 	uint16_t i;
-	q31_t numeratorSum = 0;
-	q31_t denominatorSum = 0;
+	float32_t numeratorSum = 0;
+	float32_t denominatorSum = 0;
 	for(i=0;i<lengthInput/2+1;i++)
 	{
 		numeratorSum = numeratorSum + inputFreq[i]*inputFreqMag[i];
@@ -244,11 +268,11 @@ void spectCentroid_q31(q31_t *inputFreqMag, q31_t *inputFreq, q31_t *outputCentr
 }
 
 //output is of length lengthInput/2+1
-void centerFrequency_q31(q31_t *input, q31_t *output, uint16_t lengthInput, uint32_t Fs)
+void centerFrequency_float32(float32_t *input, float32_t *output, uint16_t lengthInput, uint32_t Fs)
 {
 	uint16_t i;
-	q31_t increment = (Fs/2)/(lengthInput/2);
-	q31_t freqSum = increment;
+	float32_t increment = (Fs/2)/(lengthInput/2);
+	float32_t freqSum = increment;
 
 	output[0] = 0.0;
 	for(i=1;i<lengthInput/2;i++)
@@ -258,12 +282,12 @@ void centerFrequency_q31(q31_t *input, q31_t *output, uint16_t lengthInput, uint
 	}
 }
 
-void fftShift_q31(q31_t *input, uint16_t length)
+void fftShift_f32(float32_t *input, uint16_t length)
 {
-	q31_t temp[length/2];
-	memmove((q31_t *)&temp[0],(q31_t *)&input[0],length*2);
-	memmove((q31_t *)&input[0],(q31_t *)&input[length/2],length*2);
-	memmove((q31_t *)&input[0],(q31_t *)&temp[0],length*2);
+	float32_t temp[length];
+	memcpy((float32_t *)&temp[0],(float32_t *)&input[0],(sizeof(float32_t)*length)/2);
+	memmove((float32_t *)&input[0],(float32_t *)&input[length/2],(sizeof(float32_t)*length)/2);
+	memcpy((float32_t *)&input[0],(float32_t *)&temp[0],(sizeof(float32_t)*length)/2);
 }
 
 float32_t uint32TOfloat32(uint32_t input)
@@ -292,7 +316,7 @@ float32_t uint32TOfloat32(uint32_t input)
 * External Input and Output buffer Declarations for FFT Bin Example
 * ------------------------------------------------------------------- */
 
-/*q31_t testInput_f32_10khz[1024] =
+/*float32_t testInput_f32_10khz[1024] =
 {
 0.000213623046875000, 	0.000000000000000, 	-2.655020678073846, 	0.000000000000000, 	0.600664612949661, 	0.000000000000000, 	0.080378093886515, 	0.000000000000000,
 -2.899160484012034, 	0.000000000000000, 	2.563004262857762, 	0.000000000000000, 	3.078328403304206, 	0.000000000000000, 	0.105906778385130, 	0.000000000000000,
